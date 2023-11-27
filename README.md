@@ -11,6 +11,21 @@
 - [Другие функции](#операции-сравнения)
 
 ### Коротко о Decimal
+<details>
+<summary>Дебаггер совет</summary>
+Хорошая настройка для дебаггера в VSCode (LLDB + CodeLLDB extension):<br>
+<code>type format add --format {n_system} '{data_type}'</code><br>
+Где <code>n_system</code> система счисления <br>
+Двоичная <code>bin</code><br>
+Восьмеричная <code>oct</code><br>
+Десятичная <code>dec</code><br>
+Шестнадцатеричная <code>hex</code><br>
+А <code>data_type</code> тип данных, записанный в кавычках одинарных.<br>
+Пример:<br>
+Смена отображения целочисленных переменных на двоичный вид:<br>
+<code>type format add --format bin 'int'</code><br>
+</details>
+
 Картинка из экселя которая поможет лучше представить как устроены данные в Decimal
 ![decimal_scheme](assets/images/decimal_scheme.png)
 По этой структуре предлагается написать программу:
