@@ -61,4 +61,44 @@ int s21_mul(s21_decimal value_1, s21_decimal value_2, s21_decimal *result)
 int s21_div(s21_decimal value_1, s21_decimal value_2, s21_decimal *result)
 ```
 ### Операции сравнения
+##### Меньше (`<`)
+```c
+int s21_is_less(s21_decimal, s21_decimal)
+```
+##### Меньше или равно (`<=`)
+```c
+int s21_is_less_or_equal(s21_decimal, s21_decimal)
+```
+##### Больше (`>`)
+```c
+int s21_is_greater(s21_decimal, s21_decimal)
+```
+##### Больше или равно (`>=`)
+```c
+int s21_is_greater_or_equal(s21_decimal, s21_decimal)
+```
+##### Равно (`==`)
+```c
+int s21_is_equal(s21_decimal, s21_decimal)
+```
+##### Неравно (`!=`)
+```c
+int s21_is_not_equal(s21_decimal, s21_decimal)
+```
 ### Другие функции
+##### Округление указанного Decimal ближайшего целого числа в сторону отрицательной бесконечности.
+```c
+int s21_floor(s21_decimal value, s21_decimal *result)
+```
+##### Округление Decimal до ближайшего целого числа.
+```c
+int s21_round(s21_decimal value, s21_decimal *result)
+```
+##### Отбрасывание дробных цифр, включая конечные нули.
+```c
+int s21_truncate(s21_decimal value, s21_decimal *result)
+```
+##### Умножение указанного Decimal на -1.
+```c
+int s21_negate(s21_decimal value, s21_decimal *result)
+```
